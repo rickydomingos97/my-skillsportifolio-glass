@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: fit-content;
+    max-width: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    background: linear-gradient(to right top, #65dfc9, #6CDBEB);
+    /*this display flex config makes stuffs be in the center of page*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h1 {
+    color: #426696;
+    font-weight: 700;
+    font-size: 2rem;
+    opacity: .8;
+}
+
+h2,
+p {
+    color: #658ec6;
+    font-weight: 500;
+    opacity: 0.8;
+
+}
+
+h3 {
+    color: #426696;
+    font-weight: 700;
+    opacity: 0.8;
+}
+
+h4 {
+    color: #426696;
+    font-weight: 700;
+    opacity: 0.8;
+}
+
+
+.glass {
+    margin: 5rem auto;
+    background: white;
+    min-height: 80vh;
+    width: 85%;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+        );
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+
+}
+
+.circle1,
+.circle2 {
+    background: white;
+    background: linear-gradient(
+        to right bottom, 
+        rgba(255, 255, 255, 0.8), 
+        rgba(255, 255, 255, 0.3)
+        );
+    height: 200px;
+    width: 200px;
+    position: absolute; /* to put circles inside the main box*/
+    border-radius: 50%;
+}
+
+.circle1 {
+    top: 5%;
+    right:  2%;
+}
+
+.circle2 {
+    bottom: -65%;
+    left: 1%;
+}
+
+.dashboard {
+    flex: 1; /* to put all elements on space left*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+        );
+        border-radius: 2rem;
+
+}
+
+.user img {
+    width: 5rem;
+    margin: 0.5rem;
+}
+
+.user {
+    margin-top: -80px;
+}
+
+.schools {
+    color: #8abada;
+    font-size: 14px;
+}
+
+/* .links {
+    width: auto;
+    height: auto;
+}
+ */
+.link {
+    display: flex;
+    position: relative;
+    font-size: 12px;
+    display: flex;
+    padding: 1rem 6rem;
+    align-items: center;
+    top: 0%;
+}
+
+.link a {
+    text-decoration: none;
+}
+
+.link h2 {
+    padding: 0rem 1rem;
+}
+
+.link h2:hover {
+    color: #0c1833;
+    transition: 0.3s;
+}
+ .link img {
+     width: 4.5rem;
+ }
+
+ #rocketseat {
+     width: 4rem;
+     border-radius: 2rem;
+ }
+.games{
+    flex: 2;
+    font-size: 12px;
+}
+
+.games img {
+    margin-right: 2rem;
+}
+
+.pro {
+    background: linear-gradient(to right top, #65dfc9, #6CDBEB);
+    border-radius: 1rem;
+    color: var(-color--white);
+    padding: 3rem;
+    position: relative;
+    margin: 2rem 0;
+}
+
+.pro img {
+    width: 5rem;
+    height: 5rem;;
+    position: absolute;
+    top: 25%;
+    right: 12%;
+}
+
+.pro h2 {
+    width: 40%;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* GAMES SECTION */
+
+.status {
+    margin: 2rem 0rem 0rem 0rem;
+}
+
+.status input {
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+        );
+        border: none;
+        width: 100%;
+        padding: .5rem;
+        border-radius: 2rem;
+        margin: 1rem 0rem;
+}
+
+::placeholder {
+    font-size: 14px;
+    color: rgba(128, 146, 170, 0.637);
+    padding: .5rem;
+}
+.games {
+    margin: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card {
+    display: flex;
+    background: linear-gradient(
+        to left top, 
+        rgb(255, 255, 255, .8),
+        rgba(255, 255, 255, .5)
+        );
+        border-radius:1rem;
+        margin: 2rem 0rem;
+        padding: 2rem;
+        box-shadow: 6px 6px 20px rgba(122, 122, 122, .3);
+        justify-content: space-between;
+}
+
+.card:hover {
+    cursor: pointer;
+    background: linear-gradient(to right top, #c0e7ec, #eff4f5);
+    
+}
+
+.progress {
+    background: linear-gradient(to right top, #65dfc9, #6CDBEB);
+    width: 100%;
+    height: 1rem;
+    border-radius: 1rem;
+    margin: 1rem 0rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left: 60%;
+}
+
+.progress-spring.progress::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left: 1%;
+}
+
+.progress-react.progress::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left: 1%;
+}
+
+.progress-node.progress::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left: 20%;
+}
+
+.progress-node.progress::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    left: 1%;
+}
+.card-info {
+    width: 20rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.percentage {
+    font-weight: 700;
+    background: linear-gradient(to right top, #65dfc9, #6CDBEB);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* this put the background linear to fill letter with in */
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    text-align: center;
+    background: linear-gradient(to right top, #0c1833, #05444b);
+    padding: 2rem 10rem;
+    width: 100%;
+}
+
+footer img {
+    width: 12px'
+}
+
+footer a {
+    text-decoration: none;
+    color: #426696;
+}
+
+footer p {
+    display: flex;
+}
+.heart {
+    width: 24px;
+    margin: 0rem .5rem;
+}
+
