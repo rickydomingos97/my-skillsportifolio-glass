@@ -1,1 +1,1 @@
-# my-skillsportifolio-glass
+Deploy on https://rickyportifolioglass.netlify.app/
