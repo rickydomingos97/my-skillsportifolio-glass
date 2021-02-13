@@ -83,11 +83,13 @@ h4 {
 }
 
 .circle1 {
+    display:none;
     top: 5%;
     right:  2%;
 }
 
 .circle2 {
+    display:none;
     bottom: 0%;
     left: 1%;
 }
